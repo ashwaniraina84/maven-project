@@ -10,7 +10,7 @@ pipeline
 			echo "START JENKINS"
 			sh 'mvn clean package'
 			echo "END JENKINS"
-			sh "docker build . -t MavenProjectGit:${env.BUILD_ID}" 
+			sh "docker build . -t mavenprojectgit:${env.BUILD_ID}" 
 			echo "COMPLETE JENKINS"
 		   }
 		}
